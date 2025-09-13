@@ -1,0 +1,55 @@
+#survey-box, #minigame, #cooldown {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 999999;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#catchMe {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+/* Fullscreen blocking cooldown */
+#cooldown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* dark overlay */
+  z-index: 999999; /* on top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all; /* block mouse clicks */
+}
+
+#cooldown-box {
+  background: white;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#cooldown-timer {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+
