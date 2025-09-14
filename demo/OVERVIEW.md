@@ -4,19 +4,16 @@
 
 ## 🎯 Project Name
 ``` c
-// TODO: Enter your project name here
-```
+Impulse```
 
 ## 🚀 Summary
 ``` c
-// TODO: Write a short, high-level description of your
-// project (2–3 sentences).
+an app to help with mindful online shopping by adding a layer of friction to the online shopping experience 
 ```
 
 ## ✨ Key Features
 ``` c
-// TODO: List key features.
-```
+surveys the user then evaluates how succeptible to impulsive shopping they are ```
 
 ## 💡 Inspiration
 ``` c
@@ -25,5 +22,4 @@
 
 ## 📌 Future Improvements
 ``` c
-// TODO: Mention ideas or features you’d add if given more time.
-```
+making it work for all shopping sites```
