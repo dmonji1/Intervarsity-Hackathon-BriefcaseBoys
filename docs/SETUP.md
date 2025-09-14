@@ -5,6 +5,10 @@
 # Setup Instructions
 
 Follow the steps below to set up and run the project. (Example)
+1. Step 1 -> Open browser
+2. Step 2 -> go to extensions -> manage extensions
+3. Step 3 -> select load unpacked 
+4. step 4 -> select the repo from your local storage
 
 ---
 
@@ -13,17 +17,14 @@ Follow the steps below to set up and run the project. (Example)
 // TODO: List software, runtimes, frameworks, and or dependencies
 // along with instructions on how to set each up.
 ```
-- Example: Node.js v18+
-- Example: Python 3.10
-- Example: Docker
 
 ---
 
 ## ⚙️ Installation
 ``` bash
 # Clone the repository
-git clone <your-repo-url>
-cd <repo-name>
+git clone https://github.com/dmonji1/Intervarsity-Hackathon-BriefcaseBoys
+
 
 # Install dependencies
 <insert command here>

@@ -17,7 +17,7 @@ surveys the user then evaluates how succeptible to impulsive shopping they are `
 
 ## 💡 Inspiration
 ``` c
-// TODO: Briefly explain the motivation behind your project.
+Online shopping makes it easy to waste money on things you dont need or buy things without researching and ending up dissappointed. Our idea adds friction to the process to force the user to think before they buy
 ```
 
 ## 📌 Future Improvements

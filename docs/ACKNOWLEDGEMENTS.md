@@ -21,7 +21,7 @@ This document lists all **third-party repositories, modules, libraries, framewor
 ## 🌐 APIs & Services
 | Name          | Link / Docs                        | Author(s)      | Usage                             |
 |---------------|------------------------------------|----------------|-----------------------------------|
-chrome web api      |  https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3 | Google | Frontend
+chrome web api |  https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3 | Google | Frontend for manifest v3
 ---
 
 ## 📊 Datasets
