@@ -16,8 +16,21 @@ function showSurvey() {
   document.getElementById("submit").onclick = () => {
     const answers = [parseInt(document.getElementById("q1").value) || 3];
 
+
+
+
+    // === Fake backend logic for demo ===
+    const risk = answers[0] >= 3 ? "high" : "low";
+    if (risk === "high") {
+      div.remove();
+      showMiniGame();
+    } else {
+      div.remove();
+      alert("Low risk – happy shopping!");
+    }
+
     // Send answers to the real backend API
-    fetch('http://localhost:3000/eval', {
+    /*fetch('http://localhost:3000/eval', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +52,7 @@ function showSurvey() {
     .catch(error => {
       console.error("Error calling backend:", error);
       alert("Error connecting to server. Please try again.");
-    });
+    });*/
   };
 }
 
