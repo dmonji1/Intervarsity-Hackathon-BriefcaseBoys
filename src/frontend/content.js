@@ -5,7 +5,7 @@ function showSurvey() {
   div.innerHTML = `
     <div id="survey-box">
       <h3>Impulse Survey</h3>
-      <p>On a scale of 1–5, how tempted are you to buy right now?</p>
+      <p>On a scale of 1-5, how tempted are you to buy right now?</p>
       <input type="number" id="q1" min="1" max="5" value="3"/>
       <br><br>
       <button id="submit">Submit</button>
@@ -16,16 +16,30 @@ function showSurvey() {
   document.getElementById("submit").onclick = () => {
     const answers = [parseInt(document.getElementById("q1").value) || 3];
 
-    // === Fake backend logic for demo ===
-    const risk = answers[0] >= 3 ? "high" : "low";
-
-    if (risk === "high") {
-      div.remove();
-      showMiniGame();
-    } else {
-      div.remove();
-      alert("Low risk – happy shopping!");
-    }
+    // Send answers to the real backend API
+    fetch('http://localhost:3000/eval', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ answers: answers })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Backend response:", data);
+      
+      if (data.risk === "high") {
+        div.remove();
+        showMiniGame();
+      } else {
+        div.remove();
+        alert("Low risk - happy shopping!");
+      }
+    })
+    .catch(error => {
+      console.error("Error calling backend:", error);
+      alert("Error connecting to server. Please try again.");
+    });
   };
 }
 
@@ -79,6 +93,7 @@ function miniGameClickChase() {
     div.remove(); // success
   };
 }
+
 // === Mini-Game 3: Reaction Timer with thresholds ===
 function miniGameReaction() {
   const div = document.createElement("div");
@@ -93,7 +108,7 @@ function miniGameReaction() {
 
   const btn = document.getElementById("reactBtn");
 
-  // Random delay before turning green (2–4s)
+  // Random delay before turning green (2-4s)
   setTimeout(() => {
     btn.disabled = false;
     btn.innerText = "CLICK!";
@@ -173,9 +188,6 @@ function startCooldown() {
     setInterval(updateTimer, 1000);
   });
 }
-
-
-
 
 // === Check Cooldown on load ===
 chrome.storage.local.get("cooldown", data => {
