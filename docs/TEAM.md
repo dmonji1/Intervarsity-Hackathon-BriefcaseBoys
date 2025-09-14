@@ -23,4 +23,5 @@ Stellenbosch University
 
 ## 📧 Other Contact Info
 - GitHub Repo: https://github.com/dmonji1/Intervarsity-Hackathon-BriefcaseBoys
-- Other Info (if available): LinkedIn, Website, etc.
+- Other Info (if available): LinkedIn, Website, etc: www.linkedin.com/in/dan-monji, https://www.linkedin.com/in/nokthula-zinzi-mdhluli-16b34435b, 
+

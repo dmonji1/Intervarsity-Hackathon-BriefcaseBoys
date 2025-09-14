@@ -18,11 +18,11 @@
 
 ## 🎥 Demo
 ``` c
-// TODO: Link your demo video and PowerPoint here
+in root of repo
 ```
 Check out the Demos: 
 - [Demo Video](../demo/demo.mp4)
-- [Demo Presentation](../demo/demo.pptx)
+- [Demo Presentation]("../Presentation 1-Copy.pdf")
 
 ## 📌 Notes
 ``` c
