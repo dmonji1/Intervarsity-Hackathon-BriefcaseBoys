@@ -14,8 +14,7 @@ Follow the steps below to set up and run the project. (Example)
 
 ## 📦 Requirements
 ``` c
-// TODO: List software, runtimes, frameworks, and or dependencies
-// along with instructions on how to set each up.
+none
 ```
 
 ---
@@ -27,10 +26,11 @@ git clone https://github.com/dmonji1/Intervarsity-Hackathon-BriefcaseBoys
 
 
 # Install dependencies
-<insert command here>
+```
+none
 ```
 
 ## ▶️ Running the Project
 ``` bash
-<insert run command here> # Or an explanation on what to do
+in the browser, instructions in usage md file
 ```
