@@ -119,15 +119,15 @@ function miniGameReaction() {
       const reactionTime = Date.now() - start;
 
       if (reactionTime < 400) {
-        alert("Too fast (" + reactionTime + "ms)! Impulsive click → cooldown.");
+        alert("Too fast (" + reactionTime + "ms)!");
         div.remove();
         startCooldown();
       } else if (reactionTime > 1200) {
-        alert("Too slow (" + reactionTime + "ms)! You hesitated → cooldown.");
+        alert("Too slow (" + reactionTime + "ms)!");
         div.remove();
         startCooldown();
       } else {
-        alert("Good response (" + reactionTime + "ms)! Balanced decision.");
+        alert("Good response (" + reactionTime + "ms)!");
         div.remove(); // success → site allowed
       }
     };
