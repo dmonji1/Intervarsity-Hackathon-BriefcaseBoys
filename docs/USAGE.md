@@ -3,22 +3,18 @@
 # Usage Guide
 
 ## ▶️ Running the Application
-``` c
-// TODO: Explain how to launch the project.
-// Add commands or steps here.
-```
-``` bash
-# Example
-npm start
+``` nothing special, just need to clone the repo into local storage and use in the browser as shown below
 ```
 
 ## 🖥️ How to Use
 ``` c
 // TODO: Provide step-by-step usage instructions for judges/users.
 ```
-1. Step 1 -> Do this
-2. Step 2 -> Then this
-3. Step 3 -> See the output/result
+1. Step 1 -> Open browser
+2. Step 2 -> go to extensions -> manage extensions
+3. Step 3 -> select load unpacked 
+4. step 4 -> select the repo from your local storage
+5. step 5 -> give it a try on [cottonon.com, ebay.com, amazon.com]
 
 ## 🎥 Demo
 ``` c
