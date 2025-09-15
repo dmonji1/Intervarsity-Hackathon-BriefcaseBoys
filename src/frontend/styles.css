@@ -23,8 +23,8 @@ button {
   top: 50px;
 }
 
-/* Fullscreen blocking cooldown */
-#cooldown-overlay {
+/* Fullscreen blocking */
+#blocking-overlay{
   position: fixed;
   top: 0;
   left: 0;

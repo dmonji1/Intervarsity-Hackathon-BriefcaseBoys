@@ -1,7 +1,7 @@
 // === Survey Overlay ===
 function showSurvey() {
   const div = document.createElement("div");
-  div.id = "survey-overlay";
+  div.id = "blocking-overlay";
   div.innerHTML = `
     <div id="survey-box">
       <h3>Impulse Survey</h3>
@@ -59,6 +59,7 @@ function showSurvey() {
 // === Mini-Game 1: Stop at 5 ===
 function miniGameStopAtFive() {
   const div = document.createElement("div");
+  div.id = "blocking-overlay";
   div.innerHTML = `
     <div id="minigame">
       <h3>Mini-Game: Stop at 5</h3>
@@ -88,6 +89,7 @@ function miniGameStopAtFive() {
 // === Mini-Game 2: Chase the Button ===
 function miniGameClickChase() {
   const div = document.createElement("div");
+  div.id = "blocking-overlay";
   div.innerHTML = `
     <div id="minigame">
       <h3>Mini-Game: Catch the Button!</h3>
@@ -110,6 +112,7 @@ function miniGameClickChase() {
 // === Mini-Game 3: Reaction Timer with thresholds ===
 function miniGameReaction() {
   const div = document.createElement("div");
+  div.id = "blocking-overlay";
   div.innerHTML = `
     <div id="minigame">
       <h3>Mini-Game: Reaction Test</h3>
@@ -172,7 +175,7 @@ function startCooldown() {
 
     // Fullscreen blocking overlay
     const overlay = document.createElement("div");
-    overlay.id = "cooldown-overlay";
+    overlay.id = "blocking-overlay";
     overlay.innerHTML = `
       <div id="cooldown-box">
         <h2>Cooldown Active ⏳</h2>
